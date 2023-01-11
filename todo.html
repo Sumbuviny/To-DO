@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>To do App</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width ,initiale-scale = 1.0, maximum-scale=1.0" />
+        
+    </head>
+    <body>
+    
+        <main class="todoApp">
+            <section class="welcome">
+                <h2 class="title">
+                    Hello <input type="text" id="name" placeholder="enter your name here">
+                </h2>
+            </section>
+
+            <section class="create-todo">
+                <h3> VINY Restaurant </h3>
+                <form id="todo-form">
+                    <h4> what do you want ?</h4>
+                    <input type="text" id="content" namme="content" placeholder="Order now">
+                    
+                    <h4> Menu </h4>
+                    <div class="options">
+                        <label>
+                            <input type="radio" id="category1" name="category" value="Food">
+                            <span class="Menu food"></span>
+                            <div>Food</div>
+                        </label>
+
+                        <label>
+                            <input type="radio" id="category2" name="category" value="Drink">
+                            <span class="Menu Drink"></span>
+                            <div>Drink</div>
+                        </label>
+                    </div>
+                   <input type="submit" id="" value="Add">
+                </form>
+            </section>
+            <section class="todo-List">
+                <h3>Your list</h3>
+                <div class="list" id="todo-list">
+                  <div class="todo-item done">
+                        
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="Menu Food"></span>
+                        </label>
+
+                        <div class="todo-content">
+                            <input type="text" id="todo-content" placeholder="eg. Pizza" readonly>
+                        </div>
+
+                        <div class="actions">
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </div>
+                        
+                    
+                    </div>  
+                    
+                    <div class="todo-item done">
+                        
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="Menu Drink"></span>
+                        </label>
+
+                        <div class="todo-content">
+                            <input type="text" id="todo-content" placeholder="eg. Coca" readonly>
+                        </div>
+
+                        <div class="actions">
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </section>
+        </main>
+    
+    </body>
+</html>
