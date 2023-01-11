@@ -1,14 +1,14 @@
 /* CSS root selector is a CSS pseudo-class and the highest level of the selector which targets the highest level parent   */
 :root{
     --principal:#EA40A4;
-    --food:#3A82EE;
-    --drink: var(--principal);
+    --food:#3A82EE; /*we’re going to set an individual color our food */
+    --drink: var(--principal); /* we have a drink color it’s just going to be set to the variable of principal */
     --grey: #888;
     --light: #EEE;
     --dark: #313154;
-    --warning: #ff5b57;
+    --warning: #ff5b57; /* which is going to be a red for our delete button */
 
-    --shadow: 0 1px 3px rgba(0, 0, 0, 0, 1);
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0, 1); /*that’s  going to be the shadow we add to all of our elements */
 
     --food-menu: 0px 0px 4px rgba(58, 130, 238, 0.75);
     --drink-menu: 0px 0px 4px rgba(234, 64, 164, 0.75);
@@ -76,8 +76,13 @@ h4{
 
  .welcome .title {
     color: var(--grey);
-    font-size: 1.5rem;
+    font-size: 2.4rem;
     font-weight: 850;
+ }
+
+ #name{
+    font-size: 2rem;
+    color: #FFF;
  }
 
  /* Section 2*/
