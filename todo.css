@@ -1,0 +1,237 @@
+/* CSS root selector is a CSS pseudo-class and the highest level of the selector which targets the highest level parent   */
+:root{
+    --principal:#EA40A4;
+    --food:#3A82EE;
+    --drink: var(--principal);
+    --grey: #888;
+    --light: #EEE;
+    --dark: #313154;
+    --warning: #ff5b57;
+
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0, 1);
+
+    --food-menu: 0px 0px 4px rgba(58, 130, 238, 0.75);
+    --drink-menu: 0px 0px 4px rgba(234, 64, 164, 0.75);
+
+    /* These are all the variables we’re going to be using */
+}
+
+/*we are setting all elements to have zero margins, and zero padding,...*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* change our inputs, along if the input is not equal to a type of  radio and it’s not a type of checkbox and a button do this */
+input:not([type="radio"]):not([type="checkbox"]), button{
+    appearance:none;
+    border:none;
+    outline:none;
+    background: none;
+    cursor:initial ;
+}
+
+/* Adding a background color and color to my page*/
+body{
+    background-color:#2c3e50;
+    color: var(--dark);
+}
+
+/* All sections */
+section{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+/*heading 3*/
+h3{
+    font-size: 2rem;
+    font-weight: 700;
+    color:#EEE;
+    margin-bottom: 0.5rem;
+}
+
+/* heading 4 */
+h4{
+    color: var(--grey);
+    font-size:1.90rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+/* Section 1 */
+.welcome .title{
+    display: flex;
+}
+
+.welcome .title input{
+    margin-left: 0.5rem;
+    flex: 1 1 0%;
+    min-width: 0;
+}
+
+ .welcome .title {
+    color: var(--grey);
+    font-size: 1.5rem;
+    font-weight: 850;
+ }
+
+ /* Section 2*/
+ #content {
+     display: block;
+     width: 100%;
+     font-size: 1.150rem;
+     padding: 1rem 1.5rem;
+     color: var(--dark);
+     background-color:white;
+     border-radius: var(--shadow);
+     margin-bottom:1.5rem ;
+ }
+
+ .create-todo .options{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    grid-gap: 1rem;
+    margin-bottom: 1.5rem;
+ }
+
+ .create-todo .options label{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 1.5rem;
+    background-color: #FFF;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+ }
+
+ #category1, #category2{
+    display: flex;
+    text-align: center ;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+ }
+
+ #category1{
+    border: 2px solid var(--food);
+    box-shadow: var(--food-menu);
+}
+
+#category2{
+    border: 2px solid var(--drink);
+    box-shadow: var(--drink-menu) ;
+}
+
+.Menu::after {
+    content:"";
+    display: block;
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+    background-color: var(--food);
+    box-shadow: var(--food-menu);
+    border-radius: 40%;
+    transition: 0.4s ease-in-out;
+}
+
+.create-todo .options label div{
+    color: var(--dark);
+    font-size: 1.125rem;
+    margin-top: 1rem;
+}
+
+.create-todo input[type="submit"]{
+    display: block;
+    width:100%;
+    font-size: 1.125rem;
+    padding: 1rem 1.5rem;
+    color:#FFF;
+    background-color: var(--principal) ;
+    border-radius: 0.5rem;
+    box-shadow: var(--drink-menu);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.createTodo input[type="submit"]:hover{
+    opacity: 0.75rem;
+}
+
+/* Section 3 */
+.todo-list .list{
+    margin: 1rem 0;
+}
+
+.todo-item{
+    display:flex;
+    text-align: center;
+    background-color: #FFF;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+    margin-bottom: 1rem;
+}
+
+.checkbox{
+    display: block;
+    margin-right: 1rem;
+    cursor:pointer;
+}
+
+.todo-content{
+    flex: 1 1 0%;
+
+}
+
+#todo-content{
+    color: var(--dark);
+    font-size: 1.130rem;
+}
+
+.todo-item label{
+    display: block;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.actions{
+    display:flex;
+    text-align: center;
+}
+
+.actions button{
+    display: block;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.actions button:hover{
+    opacity: 0.80;
+}
+
+.edit{
+    margin-right: 0.5rem;
+    background-color: var(--principal);
+}
+
+.delete{
+    background-color: var(--warning);
+}
+
+.todo-item.done .todo-content input{
+    color: var(--grey);
+}
+
+
