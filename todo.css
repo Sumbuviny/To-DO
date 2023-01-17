@@ -1,12 +1,12 @@
 /* CSS root selector is a CSS pseudo-class and the highest level of the selector which targets the highest level parent   */
 :root{
     --principal:#EA40A4;
-    --food:#3A82EE; /*we’re going to set an individual color our food */
-    --drink: var(--principal); /* we have a drink color it’s just going to be set to the variable of principal */
+    --food: blue; /*we’re going to set an individual color our food */
+    --drink: #EA40A4; /* we have a drink color */
     --grey: #888;
-    --light: #EEE;
+    --light: white;
     --dark: #313154;
-    --warning: #ff5b57; /* which is going to be a red for our delete button */
+    --warning: red; /* which is going to be a red for our delete button */
 
     --shadow: 0 1px 3px rgba(0, 0, 0, 0, 1); /*that’s  going to be the shadow we add to all of our elements */
 
@@ -28,9 +28,9 @@
 input:not([type="radio"]):not([type="checkbox"]), button{
     appearance:none;
     border:none;
-    outline:none;
+    outline: none;
     background: none;
-    cursor:initial ;
+    cursor:pointer;
 }
 
 /* Adding a background color and color to my page*/
@@ -40,15 +40,15 @@ body{
 }
 
 /* All sections */
-section{
+section, .welcome {
     margin-top: 2rem;
     margin-bottom: 2rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
 
-/*heading 3*/
-h3{
+/*heading 2*/
+h2{
     font-size: 2rem;
     font-weight: 700;
     color:#EEE;
@@ -64,23 +64,21 @@ h4{
 }
 
 /* Section 1 */
-.welcome .title{
-    display: flex;
-}
 
-.welcome .title input{
+.welcome .heading input{
     margin-left: 0.5rem;
     flex: 1 1 0%;
     min-width: 0;
 }
 
- .welcome .title {
+ .welcome .heading {
     color: var(--grey);
     font-size: 2.4rem;
     font-weight: 850;
+    display: flex;
  }
 
- #name{
+ #username{
     font-size: 2rem;
     color: #FFF;
  }
@@ -97,14 +95,14 @@ h4{
      margin-bottom:1.5rem ;
  }
 
- .create-todo .options{
+ .createTodo .options{
     display: grid;
     grid-template-columns: repeat(2, 1fr) ;
     grid-gap: 1rem;
     margin-bottom: 1.5rem;
  }
 
- .create-todo .options label{
+ .createTodo .options label{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -116,7 +114,7 @@ h4{
     cursor: pointer;
  }
 
- #category1, #category2{
+ #option1, #option2{
     display: flex;
     text-align: center ;
     justify-content: center;
@@ -126,12 +124,12 @@ h4{
 
  }
 
- #category1{
+ #option1{
     border: 2px solid var(--food);
     box-shadow: var(--food-menu);
 }
 
-#category2{
+#option2{
     border: 2px solid var(--drink);
     box-shadow: var(--drink-menu) ;
 }
@@ -148,21 +146,21 @@ h4{
     transition: 0.4s ease-in-out;
 }
 
-.create-todo .options label div{
+.createTodo .options label div{
     color: var(--dark);
     font-size: 1.125rem;
     margin-top: 1rem;
 }
 
-.create-todo input[type="submit"]{
+.createTodo input[type="submit"]{
     display: block;
     width:100%;
     font-size: 1.125rem;
     padding: 1rem 1.5rem;
-    color:#FFF;
+    color: #FFF;
     background-color: var(--principal) ;
     border-radius: 0.5rem;
-    box-shadow: var(--drink-menu);
+    box-shadow: var(--shadow);
     cursor: pointer;
     transition: 0.4s ease-in-out;
 }
@@ -172,11 +170,11 @@ h4{
 }
 
 /* Section 3 */
-.todo-list .list{
+.todoList .list{
     margin: 1rem 0;
 }
 
-.todo-item{
+.todoItem{
     display:flex;
     text-align: center;
     background-color: #FFF;
@@ -192,17 +190,17 @@ h4{
     cursor:pointer;
 }
 
-.todo-content{
+.todoContent{
     flex: 1 1 0%;
 
 }
 
-#todo-content{
+#todoContent{
     color: var(--dark);
     font-size: 1.130rem;
 }
 
-.todo-item label{
+.todoItem label{
     display: block;
     margin-right: 1rem;
     cursor: pointer;
@@ -235,7 +233,7 @@ h4{
     background-color: var(--warning);
 }
 
-.todo-item.done .todo-content input{
+.todoItem.done .todoContent input{
     color: var(--grey);
 }
 
