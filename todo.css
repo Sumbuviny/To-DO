@@ -55,6 +55,18 @@ h2{
     margin-bottom: 0.5rem;
 }
 
+h2 .image{
+    vertical-align:middle;
+}
+
+.image{
+    border: none;
+    border-radius: 10px 10px;
+    width: 90px;
+    height: 90px;
+}
+
+
 /* heading 4 */
 h4{
     color: var(--grey);
@@ -62,8 +74,6 @@ h4{
     font-weight: 800;
     margin-bottom: 0.5rem;
 }
-
-/* Section 1 */
 
 .welcome .heading input{
     margin-left: 0.5rem;
@@ -79,11 +89,11 @@ h4{
  }
 
  #username{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #FFF;
  }
 
- /* Section 2*/
+ /* Section 1*/
  #content {
      display: block;
      width: 100%;
@@ -102,11 +112,11 @@ h4{
     margin-bottom: 1.5rem;
  }
 
- .createTodo .options label{
+ .createTodo .options fieldset{
     display: flex;
     flex-direction: column;
-    text-align: center;
-    justify-content: center;
+    text-align: left;
+    justify-content:left;
     padding: 1.5rem;
     background-color: #FFF;
     border-radius: 0.5rem;
@@ -114,37 +124,19 @@ h4{
     cursor: pointer;
  }
 
- #option1, #option2{
-    display: flex;
-    text-align: center ;
-    justify-content: center;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
+ legend{
+    background-color: var(--principal);
+    box-shadow: var(--food-menu);
 
+    font-size: 1.5rem;
+    font-weight: 700;
  }
 
- #option1{
-    border: 2px solid var(--food);
-    box-shadow: var(--food-menu);
-}
+ .food, .drink{
+    list-style-type: circle;
+    list-style-position: outside;
+ }
 
-#option2{
-    border: 2px solid var(--drink);
-    box-shadow: var(--drink-menu) ;
-}
-
-.Menu::after {
-    content:"";
-    display: block;
-    opacity: 0;
-    width: 0px;
-    height: 0px;
-    background-color: var(--food);
-    box-shadow: var(--food-menu);
-    border-radius: 40%;
-    transition: 0.4s ease-in-out;
-}
 
 .createTodo .options label div{
     color: var(--dark);
@@ -169,7 +161,7 @@ h4{
     opacity: 0.75rem;
 }
 
-/* Section 3 */
+/* Section 2 */
 .todoList .list{
     margin: 1rem 0;
 }
@@ -182,12 +174,6 @@ h4{
     border-radius: 0.5rem;
     box-shadow: var(--shadow);
     margin-bottom: 1rem;
-}
-
-.checkbox{
-    display: block;
-    margin-right: 1rem;
-    cursor:pointer;
 }
 
 .todoContent{

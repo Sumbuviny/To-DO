@@ -3,10 +3,10 @@ Create a To-Do App
 
 HTML
 Create a HTML file: todo.html.
-In the html code we have a main, inside there are 3 sections.
-The first section has a class attribute "welcome", it contains: h2 and Input.
-The Second Section has a class attribute "create-todo", it contains: h3, form, inputs, h4, div, labels, span.
-The last section has a class attribute "todo-list", it contains: h3, divs, labels, buttons.
+In the html code we have a main, inside there are 2 sections and 1 div tag.
+our div tag has a class attribute "welcome", it contains: h2 and Input.
+our first Section has a class attribute "create-todo", it contains: h2, form, inputs, h4, div, fieldset, lists
+our last section has a class attribute "todo-list", it contains: h2, divs, labels, buttons.
 
 CSS
 Link a CSS file to my HTML file.

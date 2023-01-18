@@ -17,24 +17,41 @@
             </div>
 
             <section class="createTodo">
-                <h2> VINY Restaurant </h2>
+                <picture>
+                    <source srcset="rest_image3.jpg" media="(min-width:960px") class="image">
+                    <source srcset="rest_image2.jpg" media="(min-width:600px") class="image">
+                    <h2><img src="restaurant.jpg" class="image" alt="Restaurant_image"> Viny Restaurant</h2>
+
+               </picture>
+                
                 <form id="todoForm">
                     <h4> what do you want ?</h4>
                     <input type="text" id="content" name="content" placeholder="Order now">
                     
                     <h4> Menu </h4>
                     <div class="options">
-                        <label>
-                            <input type="checkbox" id="option1" name="option" value="Food">
-                            <strong class="menu food"></strong>
-                            <div>Food</div>
-                        </label>
+                        <fieldset>
+                            <legend>Food </legend>
+                            <ul class="food">
+                                <li>French Fries</li>
+                                <li>Garlic Bread</li>
+                                <li> Mixed Green Salad</li>
+                                <li> French Onion Soup</li>
+                                <li> Chicken and Mushroom Pie</li>
+                                <li> Others</li>
+                            </ul>
+                        </fieldset>
 
-                        <label>
-                            <input type="checkbox" id="option2" name="option" value="Drink">
-                            <strong class="menu drink"></strong>
-                            <div>Drink</div>
-                        </label>
+                        <fieldset>
+                            <legend>Drink</legend>
+                            <ul class="drink">
+                                <li> Milkshakes</li>
+                                <li> Smoothies</li>
+                                <li> Juices</li>
+                                <li> Water</li>
+                                <li> Others</li>
+                            </ul>
+                        </fieldset>
                     </div>
                    <input type="submit" id="" value="Add ">
                 </form>
@@ -46,7 +63,7 @@
                         
                         <label class="checkbox">
                             <input type="checkbox">
-                            <strong class="menu Food"></strong>
+                            <strong></strong>
                         </label>
 
                         <div class="todoContent">
@@ -59,25 +76,7 @@
                         </div>
                         
                     
-                    </div>  
-                    
-                    <div class="todoItem done">
-                        
-                        <label class="checkbox">
-                            <input type="checkbox">
-                            <strong class="menu Drink"></strong>
-                        </label>
-
-                        <div class="todoContent">
-                            <input type="text" id="todoContent" placeholder="eg. Coca" readonly>
-                        </div>
-
-                        <div class="actions">
-                            <button class="edit">Edit</button>
-                            <button class="delete">Delete</button>
-                        </div>
-                        
-                    </div> -->
+                    </div>  -->
                     
                 </div> 
             </section>

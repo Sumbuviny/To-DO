@@ -24,11 +24,10 @@ window.addEventListener('load', () => {
     todoForm.addEventListener('submit', e=>{
         e.preventDefault();
 
-          //create todoElem which is going to have our content, option,..we're going to get our content from the form element
+          //create todoElem which is going to have our content,... we're going to get our content from the form element
 
         const todoElem ={
             content: e.target.elements.content.value, // e.target which is going to be the form we submitted,.. .value to get the actual value
-            option: e.target.elements.option.value,
             done: false,
             MadeAt: new Date().getTime()
         }
@@ -63,17 +62,6 @@ function showTodos(){
         const edit = document.createElement('button');
         const del = document.createElement('button');
 
-        input.type = 'checkbox';
-        input.checked = todoElem.done;
-        strong.classList.add('menu');
-
-          // add menu class
-        if(todoElem.option == 'drink'){
-            strong.classList.add('drink');
-        }else{
-            strong.classList.add('food');  
-        }
-
         content.classList.add('todoContent')
         actions.classList.add('actions');
         edit.classList.add('edit');
@@ -98,8 +86,7 @@ function showTodos(){
         }
 
         input.addEventListener('click', e=>{
-             todoElem.done = e.target.checked;
-
+            
              localStorage.setItem('todos', JSON.stringify(todoProject));
 
              if(todoElem.done){
