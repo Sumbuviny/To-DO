@@ -16,19 +16,24 @@
                 </h2>
             </div>
 
-            <section class="createTodo">
-                <picture>
-                    <source srcset="rest_image3.jpg" media="(min-width:960px") class="image">
-                    <source srcset="rest_image2.jpg" media="(min-width:600px") class="image">
-                    <h2><img src="restaurant.jpg" class="image" alt="Restaurant_image"> Viny Restaurant</h2>
+            <div class="home">
+                <div class="content">
+                    <h1> FAST FOOD MENU</h1>
+                    <p>162 Rosmead Av, 0670596814</p>
+                    
+                    <a href="#menu">Menu</a>
+                </div>
+            </div>
+            
 
-               </picture>
+            <section class="createTodo">
+               
                 
                 <form id="todoForm">
                     <h4> what do you want ?</h4>
                     <input type="text" id="content" name="content" placeholder="Order now">
                     
-                    <h4> Menu </h4>
+                    <h4 id="menu"> Menu </h4>
                     <div class="options">
                         <fieldset>
                             <legend>Food </legend>
@@ -57,7 +62,7 @@
                 </form>
             </section>
             <section class="todoList">
-                <h2>Your list</h2>
+                <h4>Your list</h4>
                <div class="list" id="todoList">
                  <!-- <div class="todoItem done">
                         
